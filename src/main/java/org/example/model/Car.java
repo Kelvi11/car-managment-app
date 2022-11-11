@@ -36,10 +36,8 @@ public class Car {
     private Engine engine;
 
 
-    @OneToMany(mappedBy = "car",
-            cascade = CascadeType.ALL)
-    private Set<Person> persons
-            = new HashSet<>();
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
+    private Set<Person> persons = new HashSet<>();
 
     public String getUuid() {
         return uuid;

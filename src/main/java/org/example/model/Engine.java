@@ -20,8 +20,7 @@ public class Engine {
     private FuelType fuelType;
 
     @OneToOne
-    @JoinColumn(name = "car_uuid",
-            referencedColumnName = "uuid")
+    @JoinColumn(name = "car_uuid", referencedColumnName = "uuid")
     private Car car;
 
     public String getUuid() {
