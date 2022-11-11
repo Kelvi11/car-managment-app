@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  mysqldb:
+    image: mysql:8.0.31
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=carsdb
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
